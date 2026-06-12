@@ -4,22 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tsc -b && node dist/src/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VikrantPareek/week-18.1-prisma.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
-  "dependencies": {
-    "@prisma/adapter-pg": "^7.8.0",
-    "@types/dotenv": "^6.1.1",
-    "dotenv": "^17.4.2",
-    "env": "^0.0.2",
-    "pg": "^8.21.0",
-    "prisma": "^7.8.0",
-    "typescript": "^6.0.3"
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VikrantPareek/week-18.1-prisma/issues"
   },
-  "devDependencies": {
-    "@types/node": "^25.9.1"
+  "homepage": "https://github.com/VikrantPareek/week-18.1-prisma#readme",
+  "dependencies": {
+    "typescript": "^6.0.3"
   }
 }
