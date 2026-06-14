@@ -10,7 +10,7 @@ const prisma = new PrismaClient({ adapter });
 async function main() {
   await prisma.user.create({
     data: {
-      username: "vikrant11w",
+      username: "viaaackrant11w",
       password: "vjhcb",
     },
   });
