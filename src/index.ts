@@ -1,18 +1,18 @@
-import "dotenv/config"
-import {PrismaPg} from "@prisma/adapter-pg"
-import { PrismaClient } from "./generated/prisma/client.js"
+import "dotenv/config";
+import { PrismaClient } from "./generated/prisma/client.js";
+import { PrismaPg } from "@prisma/adapter-pg";
 
-const connectionString = process.env.DATABASE_URL
+const connectionString = process.env.DATABASE_URL;
 
-const adapter = new PrismaPg({connectionString})
-const prisma = new PrismaClient({adapter})
+const adapter = new PrismaPg({ connectionString });
+const prisma = new PrismaClient({ adapter });
 
-async function main(){
-    await prisma.user.create({
-        data: {
-            username: "vhgasvuj"
-        }
-    })
+async function main() {
+  await prisma.user.create({
+    data: {
+      username: "vhgasvuj",
+    },
+  });
 }
 
-main()
+main();
